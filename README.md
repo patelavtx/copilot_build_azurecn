@@ -1,10 +1,11 @@
 # Aviatrix Copilot Build Azure
 
-This module builds an Aviatrix Copilot in Azure.
+This module builds an Aviatrix Copilot in Azure China.
 
 ### Usage:
 
-To create an Aviatrix Copilot:   *** Uses a temporary SAS link to get the required image ***
+To create an Aviatrix Copilot:   *** Uses a temporary SAS link to get the required image details  (removed 'plan' from image as not required and erorrs with) ***
+                                 *** 'You have not accepted the legal terms... ***
 
 ```
 provider "azurerm" {
@@ -12,7 +13,7 @@ provider "azurerm" {
 }
 
 module "copilot_build_azure" {
-  source                         = "github.com/AviatrixSystems/terraform-modules-copilot.git//copilot_build_azure"
+  source                         = source = "github.com/patelavtx/copilot_build_azurecn""
   copilot_name                   = "<< copilot name >>"
   virtual_machine_admin_username = "<< username >>"
   virtual_machine_admin_password = "<< password >>"
