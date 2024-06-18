@@ -53,7 +53,8 @@ variable "virtual_machine_admin_password" {
 variable "virtual_machine_size" {
   type        = string
   description = "Virtual Machine size for the copilot"
-  default     = "Standard_A4_v2"
+  # default     = "Standard_A4_v2"            #  for dev/test n/a in China
+  default = "Standard_D2s_v3"
 }
 
 variable "add_ssh_key" {
