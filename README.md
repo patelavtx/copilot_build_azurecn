@@ -96,7 +96,7 @@ output "copilot_private_ip" {
 
 - **virtual_machine_size**
 
-  Virtual Machine size for the copilot. Default: "Standard_A4_v2".
+  Virtual Machine size for the copilot. Default: "Standard_D2s_v3".        (Add resource issues in China East for Standard_A4_v2)
 
 - **allowed_cidrs**
 
